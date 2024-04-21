@@ -4,6 +4,7 @@ import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import excepcion.ErrorNAException;
+import modelo.ApiKey;
 import modelo.Titulo;
 import modelo.TituloOmdb;
 
@@ -21,10 +22,8 @@ public class Main {
         System.out.println("Escriba el nombre de una pelicula: ");
         var busqueda = lectura.nextLine();
 
-        String clave = System.getenv("APIKEY_OMDB");
-        System.out.println(clave);
+        String clave = ApiKey.getApiKey();
 
-        //String clave = "4a05cb95"; //COLOQUE AQUI SU CLAVE DE OMDb
         String direccion = "https://www.omdbapi.com/?t=" + busqueda + "&apikey=" +clave;
 
         try

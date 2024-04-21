@@ -1,1 +1,1 @@
-Titulo: nombre='Runner', Fecha de Estreno=2021, Duracion en Minutos=87}
+Titulo: nombre='Runner', Fecha de Estreno=2021, Duracion en Minutos=87
