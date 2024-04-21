@@ -21,7 +21,10 @@ public class Main {
         System.out.println("Escriba el nombre de una pelicula: ");
         var busqueda = lectura.nextLine();
 
-        String clave = "4a05cb95"; //COLOQUE AQUI SU CLAVE DE OMDb
+        String clave = System.getenv("APIKEY_OMDB");
+        System.out.println(clave);
+
+        //String clave = "4a05cb95"; //COLOQUE AQUI SU CLAVE DE OMDb
         String direccion = "https://www.omdbapi.com/?t=" + busqueda + "&apikey=" +clave;
 
         try
